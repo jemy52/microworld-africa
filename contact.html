@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Microworld Africa | Get Expert Support & Product Enquiries </title>
+<meta name="description"
+content="Contact Microworld Africa for product enquiries, quotations, technical support, calibration services and weighing equipment solutions.">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+ <link rel="icon" type="image/png" href="Favicon/favicon-96x96.webp" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="Favicon/favicon.svg" />
+<link rel="shortcut icon" href="Favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.webp" />
+<meta name="apple-mobile-web-app-title" content="Microworld Africa Limited" />
+<link rel="manifest" href="Favicon/site.webmanifest" />
+
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Microworld Africa Limited</a>
+      <nav class="main-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><div id="themeIcon" title="Toggle Theme">🌙</div></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>For sales and support, please get in touch — we respond quickly to enquiries across Africa.</p>
+
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form" novalidate>
+            <label>Name<input type="text" name="name" id="name" required minlength="2" /></label>
+            <label>Email<input type="email" name="email" id="email" required /></label>
+            <label>Company / Organisation<input type="text" name="company" id="company" /></label>
+            <label>Message<textarea name="message" id="message" rows="6" required></textarea></label>
+
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send message</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
+
+            <p class="form-note">If your browser does not support forms, email us at <a href="mailto:microworldafrica04@gmail.com" class="contact-link">microworldafrica04@gmail.com</a>.</p>
+            <div id="form-result" class="form-result" aria-live="polite"></div>
+          </form>
+
+          <aside class="contact-info" aria-label="Contact details">
+            <h3>Microworld Africa Limited</h3>
+            <p><strong>Headquarters:</strong> Jekima Centre opposite St. Stephen's Church, Jogoo Road, Nairobi, Kenya</p>
+            <p><strong>Email:</strong> <a href="mailto:microworldafrica04@gmail.com" class="contact-link">microworldafrica04@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+254722671398" class="contact-link">+254722671398</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+254720573612" class="contact-link">+254720573612</a></p>
+            <p style="margin-top: 1.5rem;">
+              <a href="#" id="contact-whatsapp-btn" class="whatsapp-btn" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i> Chat With Us
+              </a>
+            </p>
+            <h4>Office hours</h4>
+            <p>Mon–Fri 08:00 — 17:00 EAT</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Microworld Africa Limited — Industrial Weighing Equipment Supplier in Kenya</p>
+    </div>
+  </footer>
+
+  <a href="#" id="dynamic-whatsapp-btn" class="floating-whatsapp-btn-direct" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
