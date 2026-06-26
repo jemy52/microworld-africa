@@ -97,7 +97,7 @@ const PRODUCTS = [
   {
    id:'platform-scales',
    title: '304 Stainless steel platform scale mounted with LP7510 Indicator',
-   img:'images/304 Stainless steel platform scale mounted with LP7510 indicator.webp',
+   img:'images/304 Stainless steel platform scale mounted with LP7510 Indicator.webp',
    short: 'Versatile heavy-duty scale designed for accurate weighing of large, bulky, and industrial items across a wide range of applications.',
     specs: ['Large weighing platform for bulky goods.', 'High-capacity and accurate measurements.', 'Durable construction for demanding environments.', 'Easy loading and unloading of items.', 'Suitable for warehouses, manufacturing, and logistics operations.'],
     tag: 'Industrial Weighing'
