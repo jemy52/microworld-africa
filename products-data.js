@@ -85,9 +85,9 @@ const PRODUCTS = [
     title: 'A12 Platform Scales',
     img: {
       isMultiple: true,
-      img1: 'images/A12 platform scale 500 by 450.webp',
+      img1: 'images/A12 Platform scale 500 by 450.webp',
       title1: 'A12 Platform scale 500mm by 450mm cap 200kgs',
-      img2: 'images/A12 platform scale 600 by 600.webp',
+      img2: 'images/A12 Platform scale 600 by 600.webp',
       title2: 'A12 Platform scale 600mm by 600mm cap 300kgs'
     },
     short: 'Versatile heavy-duty scale designed for accurate weighing of large, bulky, and industrial items across a wide range of applications.',
@@ -97,7 +97,7 @@ const PRODUCTS = [
   {
    id:'platform-scales',
    title: '304 Stainless steel platform scale mounted with LP7510 Indicator',
-   img:'images/304 stainless steel platform scale mounted with LP7510 indicator.webp',
+   img:'images/304 Stainless steel platform scale mounted with LP7510 indicator.webp',
    short: 'Versatile heavy-duty scale designed for accurate weighing of large, bulky, and industrial items across a wide range of applications.',
     specs: ['Large weighing platform for bulky goods.', 'High-capacity and accurate measurements.', 'Durable construction for demanding environments.', 'Easy loading and unloading of items.', 'Suitable for warehouses, manufacturing, and logistics operations.'],
     tag: 'Industrial Weighing'
@@ -107,8 +107,8 @@ const PRODUCTS = [
    title: '304 Stainless Steel Platform Scales',
    img: {
       isMultiple: true,
-      img1: 'images/304 stainless steel platforms.webp',
-      img2: 'images/304 stainless steel platforms 2.webp',
+      img1: 'images/304 Stainless steel platforms.webp',
+      img2: 'images/304 Stainless steel platforms 2.webp',
    },
    short: 'Versatile heavy-duty scale designed for accurate weighing of large, bulky, and industrial items across a wide range of applications.',
     specs: ['Large weighing platform for bulky goods.', 'High-capacity and accurate measurements.', 'Durable construction for demanding environments.', 'Easy loading and unloading of items.', 'Suitable for warehouses, manufacturing, and logistics operations.'],
@@ -198,7 +198,7 @@ const PRODUCTS = [
   {
     id: 'weighing-indicator',
     title: 'LP7510 Weighing Indicator - With RS232',
-    img: 'images/Weighing indicator.webp',
+    img: 'images/Weighing Indicator.webp',
     short: 'Electronic device that receives signals from load cells and displays accurate weight measurements for industrial and commercial weighing systems.',
     specs: [ 'Accurate weight display','Load cell signal processing','Clear LCD or LED display','Suitable for industrial weighing systems','Compatible with platform scales and weighbridges'],
     tag: 'Indicators'
