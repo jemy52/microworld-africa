@@ -108,7 +108,9 @@ const PRODUCTS = [
    img: {
       isMultiple: true,
       img1: 'images/304 Stainless steel platforms.webp',
+     title1: 'under view',
       img2: 'images/304 Stainless steel platforms 2.webp',
+     title2: 'front view'
    },
    short: 'Versatile heavy-duty scale designed for accurate weighing of large, bulky, and industrial items across a wide range of applications.',
     specs: ['Large weighing platform for bulky goods.', 'High-capacity and accurate measurements.', 'Durable construction for demanding environments.', 'Easy loading and unloading of items.', 'Suitable for warehouses, manufacturing, and logistics operations.'],
