@@ -324,9 +324,9 @@ body.dark-mode .product-card .img-container {
 }
 .btn:active { transform: scale(0.98); }
 .btn.primary { background: var(--primary); color: white; }
-.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); }
-.btn.ghost:hover { background: rgba(0,0,0,0.02); }
-body.dark-mode .btn.ghost:hover { background: rgba(255,255,255,0.02); }
+.btn.ghost { background: transparent; border: 1px solid var(--border); color: var(--text); cursor:pointer; }
+.btn.ghost:hover { background: rgba(119,209,245,0.955); }
+body.dark-mode .btn.ghost:hover { background: rgba(2,79,109,0.955); }
 
 .whatsapp-btn {
   display: inline-flex; align-items: center; gap: 8px;
