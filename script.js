@@ -1,8 +1,8 @@
-function renderProducts() {
+function renderProducts(products = PRODUCTS) {
   const grid = document.getElementById('products-grid');
   if (!grid) return;
   
-  grid.innerHTML = PRODUCTS.map(p => {
+  grid.innerHTML = products.map(p => {
     let imageAreaHtml = '';
 
     // Check if this item uses the special dual-image block structure
@@ -41,7 +41,21 @@ function renderProducts() {
     `;
   }).join('');
 }
+const searchInput = document.getElementById("searchInput");
 
+if (searchInput) {
+  searchInput.addEventListener("input", () => {
+    const searchText = searchInput.value.toLowerCase().trim();
+
+    const filteredProducts = PRODUCTS.filter(product =>
+      product.title.toLowerCase().includes(searchText) ||
+      product.id.toLowerCase().includes(searchText) ||
+      product.tag.toLowerCase().includes(searchText)
+    );
+
+    renderProducts(filteredProducts);
+  });
+}
 
 function setupMobileMenu() {
   const navToggle = document.querySelector('.nav-toggle');
