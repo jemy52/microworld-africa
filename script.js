@@ -139,18 +139,30 @@ function setYear() {
   const el = document.getElementById('year');
   if(el) el.textContent = new Date().getFullYear();
 }
-
 function setupThemeToggle() {
   const icon = document.getElementById("themeIcon");
   if (!icon) return;
 
-  icon.addEventListener("click", function() {
-    document.body.classList.toggle("dark-mode");
-    
-    if(document.body.classList.contains("dark-mode")) {
+  // Load saved theme (default = light mode)
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark-mode");
+    icon.textContent = "☀️";
+  } else {
+    document.documentElement.classList.remove("dark-mode");
+    icon.textContent = "🌙";
+  }
+ // Toggle theme when icon is clicked
+  icon.addEventListener("click", function () {
+    const isDark = document.documentElement.classList.toggle("dark-mode");
+
+    if (isDark) {
       icon.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
     } else {
       icon.textContent = "🌙";
+      localStorage.setItem("theme", "light");
     }
   });
 }
@@ -160,7 +172,6 @@ function setupDynamicWhatsApp() {
     '254722671398', 
     '254720573612'  
   ];
-  
   const inlineBtn = document.getElementById('contact-whatsapp-btn');
   const floatingBtn = document.getElementById('dynamic-whatsapp-btn');
 
