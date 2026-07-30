@@ -17,8 +17,7 @@
   --gap: 1.25rem;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
-
-body.dark-mode {
+.dark-mode body {
   --bg: #121212;
   --card: #1e1e1e;
   --text: #f3f4f6;
@@ -27,12 +26,12 @@ body.dark-mode {
   --header-bg: rgba(30, 30, 30, 0.95);
   --hero-bg: linear-gradient(90deg, rgba(11, 99, 214, 0.1), rgba(0, 0, 0, 0.2));
 }
-
-body.dark-mode #themeIcon { color: #38bdf8; }
-body.dark-mode .contact-link, 
-body.dark-mode .contact-text,
-body.dark-mode .product-card .specs-short { color: #ffffff !important; }
-
+.dark-mode #themeIcon { 
+  color: #38bdf8;
+ }
+.dark-mode .contact-link, 
+.dark-mode .contact-text,
+.dark-mode .product-card .specs-short { color: #ffffff !important; }
 /* ==========================================================================
    BASE STYLES & STRUCTURE
    ========================================================================== */
