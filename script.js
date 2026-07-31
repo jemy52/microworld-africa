@@ -1,10 +1,11 @@
-function renderProducts(products = PRODUCTS) {
+function renderProducts(products) {
   const grid = document.getElementById('products-grid');
   if (!grid) return;
-  
+
+  // If no products were passed in, use PRODUCTS (only on the products page)
+  products = products || PRODUCTS;
   grid.innerHTML = products.map(p => {
     let imageAreaHtml = '';
-
     // Check if this item uses the special dual-image block structure
     if (p.img && p.img.isMultiple) {
       imageAreaHtml = `
@@ -209,7 +210,11 @@ function setupDynamicWhatsApp() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  renderProducts();
+
+  // Only run on the Products page
+  if (document.getElementById('products-grid')) {
+    renderProducts();
+  }
   setupMobileMenu();
   setupForm();
   setYear();
@@ -217,3 +222,4 @@ document.addEventListener('DOMContentLoaded', () => {
   setupFAQAccordion();
   setupDynamicWhatsApp();
 });
+
